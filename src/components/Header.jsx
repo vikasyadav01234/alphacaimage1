@@ -6,13 +6,13 @@ const Header = () => {
 			<h1 className="heading">
 				Alpaca Image Generator
 				<a
-					href="https://soumilroy.com"
+					href="https://github.com/vikasyadav01234"
 					target="_blank"
 					className="attribution"
 					rel="noreferrer"
 				>
-					by Soumil Roy
-				</a>
+					by Vikas
+                </a>
 			</h1>
 		</div>
 	);
