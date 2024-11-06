@@ -8,7 +8,7 @@ import Header from './Header'
 import download from 'downloadjs'
 import { getImage } from '../utils/getImage'
 import { toPng } from 'html-to-image'
-// import { randomize } from "../utils/randomize";
+//import { randomize } from "../utils/randomize";
 
 const Alpaca = () => {
   const [config, setConfig] = useState(alpacaConfig)
@@ -107,7 +107,7 @@ const Alpaca = () => {
       })
     }
     renderAlpaca()
-    // eslint-disable-next-line
+    //eslint-disable-next-line
   }, [])
 
   const alpacaAttr = {
