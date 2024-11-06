@@ -1,20 +1,20 @@
 import React from "react";
 
-const AlpacaArt = ({ attr }) => {
-	const { bg, neck, nose, mouth, eyes, hair, leg, ears, accessories } = attr;
+const Buttons = ({ attributes, changeImage }) => {
 	return (
-		<>
-			<img src={bg} alt="Background" className="background" />
-			<img src={neck} alt="Neck" className="neck" />
-			<img src={nose} alt="Nose" className="nose" />
-			<img src={mouth} alt="Mouth" className="mouth" />
-			<img src={eyes} alt="eyes" className="eyes" />
-			<img src={hair} alt="hair" className="hair" />
-			<img src={leg} alt="leg" className="leg" />
-			<img src={ears} alt="ears" className="ears" />
-			<img src={accessories} alt="accessories" className="accessories" />
-		</>
+		<div className="btn-controls">
+			<h3>{attributes.label}</h3>
+			{attributes.items.map((attr) => (
+				<button
+					className={`btn ${attr.selected ? "selected" : ""}`}
+					key={attr.id}
+					onClick={() => changeImage(attributes, attr)}
+				>
+					{attr.label}
+				</button>
+			))}
+		</div>
 	);
 };
 
-export default AlpacaArt;
+export default Buttons;
